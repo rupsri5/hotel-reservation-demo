@@ -12,4 +12,3 @@ function testReservation() returns error? {
     Reservation reservation = check testClient->post("/reservations", reservationRequest);
     test:assertEquals(reservation.room.number, 303);
 }
-
